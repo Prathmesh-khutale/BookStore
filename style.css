@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 10px 0;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo img {
+    height: auto;
+    width: 90px;
+}
+
+.search_item {
+    font-size: 20px;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search_item input {
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login {
+    margin-right: 20px;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pname {
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.book {
+    background: url("./Image/pexels-george-milton-7034285.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 71%);
+   
+}
+
+.wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 500%;
+}
+
+.book-section {
+    display: none;
+    width: 100%;
+}
+
+.book-section.active {
+    display: block;
+}
+
+.bookitem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 20px;
+    position: relative;
+   
+    
+}
+
+.bookimage {
+    width: 35%;
+    height: auto;
+}
+
+.book-details {
+    width: 70%;
+    color: white;
+}
+
+.bookname {
+    font-size: 40px;
+    
+    margin-bottom: 10px;
+   
+}
+.give{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    margin-bottom: 20px;
+    width: auto;
+    border-radius: 10px;
+    transition: 0s;
+
+}
+
+.book-description {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+.buy-book {
+    width: 120px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-book:hover {
+    background-color: #45a049;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.feature {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.featureimg {
+    width: 40%;
+    margin-left: 100px;
+}
+
+.featuretittle {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.featuredes {
+    width: 60%;
+    margin-left: 70px;
+}
+
+.contain1,
+.contain2,
+.contain3,
+.contain4,
+.contain5 {
+    margin: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.bookbuy {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.bookbuy img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.bookbuy .price,
+.bookbuy .smallname {
+    margin: 10px 0;
+}
+
+.smallbook{
+    height: 100px;
+}
+
+.bookbuy button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.bookbuy button:hover {
+    background-color: #45a049;
+}
+
+.btnlogin{
+   position: fixed;
+   z-index: 1;
+   background-color:bisque;
+   left: 50%;
+   top: -50%;
+
+   transform: translate(-50%,-50%);
+
+   padding: 40px;
+   border-radius: 5px;
+   width: 30%;
+ 
+   background: url("./Image/pexels-karolina-grabowska-4219038.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: 1s;
+    /* background-color: white */
+    box-shadow: 0px 0px 10px 3px black;
+
+    
+    
+   
+}
+
+.btn{
+    border: black 2px solid;
+    background-color: #45a049;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.btnlogin span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #45a049;
+  
+    height: auto;
+    width: 50px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+.data label {
+    font-weight: bold;
+    color: black;
+}
+.showlogin{
+    top: 50%;
+}
+
+
+
+.data input {
+    height: 30px;
+}
+
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+ 
+    position:fixed;
+    top: 0%;
+    z-index: -2;
+    opacity: 0;
+}
+
+
+.showop{
+    opacity: 1;
+    z-index: 1;
+}
+
+
+

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 10px 0;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo img {
+    height: auto;
+    width: 90px;
+}
+
+.search_item {
+    font-size: 20px;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search_item input {
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login {
+    margin-right: 20px;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pname {
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.book {
+    background: url("./Image/pexels-george-milton-7034285.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 71%);
+}
+
+.wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 500%;
+}
+
+.book-section {
+    display: none;
+    width: 100%;
+}
+
+.book-section.active {
+    display: block;
+}
+
+.bookitem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 20px;
+    position: relative;
+}
+
+.bookimage {
+    width: 35%;
+    height: auto;
+}
+
+.book-details {
+    width: 70%;
+}
+
+.bookname {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.book-description {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.buy-book {
+    width: 120px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-book:hover {
+    background-color: #45a049;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.feature {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.featureimg {
+    width: 40%;
+    margin-left: 100px;
+}
+
+.featuretittle {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.featuredes {
+    width: 60%;
+    margin-left: 70px;
+}
+
+.contain1,
+.contain2,
+.contain3,
+.contain4,
+.contain5 {
+    margin: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.bookbuy {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.bookbuy img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.bookbuy .price,
+.bookbuy .smallname {
+    margin: 10px 0;
+}
+
+.bookbuy button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.bookbuy button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="ok">
+            <div class="all">
+                <div class="logo">
+                    <img src="./Image/logo.jpg" alt="Logo" id="img1">
+                </div>
+                <div class="search_item">
+                    <label for="search" style="color:white;">Search Product:</label>
+                    <input type="search" name="search" id="search" placeholder="search_item">
+                </div>
+                <div class="login">
+                    <button>Login</button>
+                </div>
+            </div>
+        </nav>
+        <div class="product">
+            <h3 class="pname" style="color: white;">Story-Book</h3>
+            <h3 class="pname" style="color: white;">Horror-Book</h3>
+            <h3 class="pname" style="color: white;">Poetry-Book</h3>
+            <h3 class="pname" style="color: white;">Historical-Book</h3>
+            <h3 class="pname" style="color: white;">Adventure-Book</h3>
+        </div>
+    </header>
+
+    <div class="book">
+        <div class="wrapper">
+            <div class="bookitem">
+                <img src="./Image/story-book-removebg-preview.png" alt="" class="bookimage">
+                <div class="book-details">
+                    <h1 class="bookname" id ="s-book">Story-Book</h1>
+                    <p class="book-description">"Story books: Gateways to imagination and discovery. Dive into captivating narratives, explore new worlds, and embark on thrilling adventures. Let your imagination soar and your mind wander with each turn of the page. Experience the magic of storytelling and unlock the power of words."</p>
+                    <button class="buy-book"> Buy-BOOK</button>
+                </div>
+            </div>
+
+            <!-- Repeat similar structure for other books -->
+
+            <div class="bookitem">
+                <img src="./Image/story-book-removebg-preview.png" alt="" class="bookimage">
+                <div class="book-details">
+                    <h1 class="bookname" id = "h-book">Horror-Book</h1>
+                    <p class="book-description">This is a story book description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="buy-book"> Buy-BOOK</button>
+                </div>
+            </div>
+
+            <div class="bookitem">
+                <img src="./Image/story-book-removebg-preview.png" alt="" class="bookimage">
+                <div class="book-details">
+                  <h1 class="bookname" id = "p-book">Poetry-Book</h1>
+                    <p class="book-description">This is a story book description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#contain1"><button class="buy-book"> Buy-BOOK</button></a>
+                </div>
+            </div>
+
+
+            <div class="bookitem">
+                <img src="./Image/story-book-removebg-preview.png" alt="" class="bookimage">
+                <div class="book-details">
+                    <h1 class="bookname" id = "hi-book">Historical-Book</h1>
+                    <p class="book-description">This is a story book description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="buy-book"> Buy-BOOK</button>
+                </div>
+            </div>
+
+
+            <div class="bookitem">
+                <img src="./Image/story-book-removebg-preview.png" alt="" class="bookimage">
+                <div class="book-details">
+                    <h1 class="bookname" id = "a-book">Adventure-Book</h1>
+                    <p class="book-description">This is a story book description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="buy-book"> Buy-BOOK</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <img src="./Image/delivery.png" alt="" class = "featureimg">
+            <span class="featuretittle">Free shipping</span>
+            <span class="featuredes">Free worlds wide shippinh on all orders.</span>
+        </div>
+
+
+        <div class="feature">
+            <img src="./Image/return.png" alt="" class = "featureimg">
+            <span class="featuretittle">30 Days Return</span>
+            <span class="featuredes">No question return and easy refund in 14 days.</span>
+        </div>
+
+
+        <div class="feature">
+            <img src="./Image/gift-card.png" alt="" class = "featureimg">
+            <span class="featuretittle">Gift Cards</span>
+            <span class="featuredes">buy gift card and earn coupen code.</span>
+        </div>
+
+
+        <div class="feature">
+            <img src="./Image/email.png" alt="" class = "featureimg">
+            <span class="featuretittle">Contact us!!</span>
+            <span class="featuredes"> keep in touch vie email and support system.</span>
+        </div>
+    </div>
+
+
+   
+   
+      <!-- Story Books Buy Section -->
+      <section class="contain-a" id="contain1">
+        <div class="contain1">
+           
+            <!-- Repeat similar structure for other Story books -->
+       
+    
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+    </div>
+
+</section>
+
+
+    <!-- Horror Books Buy Section -->
+    <section class="contain-b" id="contain2">
+        <div class="contain2">
+            <div class="bookbuy">
+                <img src="./Image/images (2).jpg" alt="" class="smallbook">
+                <div class="price">Price: 120 Rs</div>
+                <div class="smallname">Name: Horror</div>
+                <div class="smallbuy"><button>Add</button></div>
+            </div>
+            <!-- Repeat similar structure for other Horror books -->
+     
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (2).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (2).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (2).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (2).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (2).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (2).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (2).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (2).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (2).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (2).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+    </div>
+</section>
+
+    <script>
+        const wrapper = document.querySelector('.wrapper'); // Select the wrapper correctly
+const menuItems = document.querySelectorAll('.pname'); // Select all menu items
+
+menuItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        wrapper.style.transform = `translateX(${-100 * index}vw)`; // Corrected the translation syntax
+    });
+});
+
+
+
+
+// Get all headings
+   // JavaScript code for toggling section visibility
+   const headings = document.querySelectorAll('.pname');
+
+   headings.forEach(heading => {
+       heading.addEventListener('click', () => {
+           const sectionId = heading.textContent.replace(/ /g, '-').toLowerCase();
+           const section = document.getElementById(sectionId);
+           if (section) {
+               section.style.display = section.style.display === 'none' ? 'block' : 'none';
+               const otherSections = document.querySelectorAll('section:not(#' + sectionId + ')');
+               otherSections.forEach(otherSection => {
+                   otherSection.style.display = 'none';
+               });
+           }
+       });
+   });
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="ok">
+            <div class="all">
+                <div class="logo">
+                    <img src="./Image/logo.jpg" alt="Logo" id="img1">
+                </div>
+                <div class="search_item">
+                    <label for="search" style="color:white;">Search Product:</label>
+                    <input type="search" name="search" id="search" placeholder="search_item">
+                </div>
+                <div class="login">
+                    <button>Login</button>
+                </div>
+            </div>
+        </nav>
+        <div class="product">
+            <h3 class="pname" data-target="#story-section" style="color: white;">Story-Book</h3>
+            <h3 class="pname" data-target="#horror-section" style="color: white;">Horror-Book</h3>
+            <h3 class="pname" data-target="#poetry-section" style="color: white;">Poetry-Book</h3>
+            <h3 class="pname" data-target="#historical-section" style="color: white;">Historical-Book</h3>
+            <h3 class="pname" data-target="#adventure-section" style="color: white;">Adventure-Book</h3>
+        </div>
+    </header>
+
+    <div class="book">
+        <div class="wrapper">
+            <section id="story-section" class="book-section active">
+                <div class="bookitem">
+                    <img src="./Image/story-book-removebg-preview.png" alt="" class="bookimage">
+                    <div class="book-details">
+                        <h1 class="bookname">Story-Book</h1>
+                        <p class="book-description">"Story books: Gateways to imagination and discovery. Dive into captivating narratives, explore new worlds, and embark on thrilling adventures. Let your imagination soar and your mind wander with each turn of the page. Experience the magic of storytelling and unlock the power of words."</p>
+                        <a href="#contain1"><button class="buy-book">Buy-BOOK</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="horror-section" class="book-section">
+                <div class="bookitem">
+                    <img src="./Image/horror-book-removebg-preview.png" alt="" class="bookimage">
+                    <div class="book-details">
+                        <h1 class="bookname">Horror-Book</h1>
+                        <p class="book-description">"Dive into the eerie and spine-chilling world of horror books. Experience heart-pounding tales that keep you on the edge of your seat, filled with suspense, terror, and the supernatural."</p>
+                        <a href="#contain2"><button class="buy-book">Buy-BOOK</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="poetry-section" class="book-section">
+                <div class="bookitem">
+                    <img src="./Image/poetry-book-removebg-preview.png" alt="" class="bookimage">
+                    <div class="book-details">
+                        <h1 class="bookname">Poetry-Book</h1>
+                        <p class="book-description">"Immerse yourself in the rhythm and beauty of poetry books. Discover a collection of verses that express emotions, thoughts, and stories in a captivating and lyrical manner."</p>
+                        <a href="#contain3"><button class="buy-book">Buy-BOOK</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="historical-section" class="book-section">
+                <div class="bookitem">
+                    <img src="./Image/historical-book-removebg-preview.png" alt="" class="bookimage">
+                    <div class="book-details">
+                        <h1 class="bookname">Historical-Book</h1>
+                        <p class="book-description">"Explore the past with historical books that bring history to life. From ancient civilizations to modern times, these books offer a detailed and engaging look at the events and people that shaped our world."</p>
+                        <a href="#contain4"><button class="buy-book">Buy-BOOK</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="adventure-section" class="book-section">
+                <div class="bookitem">
+                    <img src="./Image/adventure-book-removebg-preview.png" alt="" class="bookimage">
+                    <div class="book-details">
+                        <h1 class="bookname">Adventure-Book</h1>
+                        <p class="book-description">"Set out on thrilling journeys with adventure books. These tales of excitement and exploration will transport you to new worlds, full of danger, discovery, and heroism."</p>
+                        <a href="#contain5"><button class="buy-book">Buy-BOOK</button></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <img src="./Image/delivery.png" alt="" class="featureimg">
+            <span class="featuretittle">Free shipping</span>
+            <span class="featuredes">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img src="./Image/return.png" alt="" class="featureimg">
+            <span class="featuretittle">30 Days Return</span>
+            <span class="featuredes">No questions return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img src="./Image/gift-card.png" alt="" class="featureimg">
+            <span class="featuretittle">Gift Cards</span>
+            <span class="featuredes">Buy gift cards and earn coupon codes.</span>
+        </div>
+        <div class="feature">
+            <img src="./Image/email.png" alt="" class="featureimg">
+            <span class="featuretittle">Contact us!!</span>
+            <span class="featuredes">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+    <!-- Story Books Buy Section -->
+    <section class="contain-a" id="contain1">
+        <div class="contain1">
+            <div class="bookbuy">
+                <img src="./Image/story-book-small.jpg" alt="" class="smallbook">
+                <div class="price">Price: 120 Rs</div>
+                <div class="smallname">Name: Mrutunjay</div>
+                <div class="smallbuy"><button>Add</button></div>
+            </div>
+            <!-- Repeat similar structure for other Story books -->
+        </div>
+    </section>
+
+    <!-- Horror Books Buy Section -->
+    <section class="contain-b" id="contain2">
+        <div class="contain2">
+            <div class="bookbuy">
+                <img src="./Image/horror-book-small.jpg" alt="" class="smallbook">
+                <div class="price">Price: 150 Rs</div>
+                <div class="smallname">Name: Horror</div>
+                <div class="smallbuy"><button>Add</button></div>
+            </div>
+            <!-- Repeat similar structure for other Horror books -->
+        </div>
+    </section>
+
+    <!-- Poetry Books Buy Section -->
+    <section class="contain-c" id="contain3">
+        <div class="contain3">
+            <div class="bookbuy">
+                <img src="./Image/poetry-book-small.jpg" alt="" class="smallbook">
+                <div class="price">Price: 130 Rs</div>
+                <div class="smallname">Name: Poetry</div>
+                <div class="smallbuy"><button>Add</button></div>
+            </div>
+            <!-- Repeat similar structure for other Poetry books -->
+        </div>
+    </section>
+
+    <!-- Historical Books Buy Section -->
+    <section class="contain-d" id="contain4">
+        <div class="contain4">
+            <div class="bookbuy">
+                <img src="./Image/historical-book-small.jpg" alt="" class="smallbook">
+                <div class="price">Price: 140 Rs</div>
+                <div class="smallname">Name: Historical</div>
+                <div class="smallbuy"><button>Add</button></div>
+            </div>
+            <!-- Repeat similar structure for other Historical books -->
+        </div>
+    </section>
+
+    <!-- Adventure Books Buy Section -->
+    <section class="contain-e" id="contain5">
+        <div class="contain5">
+            <div class="bookbuy">
+                <img src="./Image/adventure-book-small.jpg" alt="" class="smallbook">
+                <div class="price">Price: 160 Rs</div>
+                <div class="smallname">Name: Adventure</div>
+                <div class="smallbuy"><button>Add</button></div>
+            </div>
+            <!-- Repeat similar structure for other Adventure books -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

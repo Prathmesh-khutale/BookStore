@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="ok">
+            <div class="all">
+                <div class="logo">
+                    <img src="./Image/logo.jpg" alt="Logo" id="img1">
+                </div>
+                <div class="search_item">
+                    <label for="search" style="color:white;">Search Product:</label>
+                    <input type="search" name="search" id="search" placeholder="search_item">
+                </div>
+                <div class="login">
+                    <button>Login</button>
+                </div>
+            </div>
+        </nav>
+        <div class="product">
+            <h3 class="pname" id = "contain1"style="color: white;" onclick="showbook">Story-Book</h3>
+            <h3 class="pname" id = "contain2" style="color: white;" onclick="showbook">Horror-Book</h3>
+            <h3 class="pname" id = "contain3" style="color: white;" onclick="showbook">Poetry-Book</h3>
+            <h3 class="pname" id = "contain4" style="color: white;" onclick="showbook">Historical-Book</h3>
+            <h3 class="pname" id = "contain5" style="color: white;" onclick="showbook">Adventure-Book</h3>
+        </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <div class="btnlogin">
+        <span>&times;</span>
+        <div class="btnloginlogin">
+            <div class="data">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name"></br></br>
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email"></br></br>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password"></br></br>
+
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" name="cpassword" id="cpassword"></br></br>
+
+
+            </div>
+
+            <div class="btn1">
+                <button class="btn">submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="book">
+        <div class="wrapper">
+            <div class="bookitem">
+                <img src="./Image/download_image_1717624642219-removebg-preview.png" alt="" class="bookimage">
+                <div class="book-details">
+                    <div class="give">
+                    <h1 class="bookname" id ="s-book">Story-Book</h1>
+                    <p class="book-description">"Story books: Gateways to imagination and discovery. Dive into captivating narratives, explore new worlds, and embark on thrilling adventures. Let your imagination soar and your mind wander with each turn of the page. Experience the magic of storytelling and unlock the power of words."</p>
+                </div>
+                    <a href="#contain1-section"><button class="buy-book"> Buy-BOOK</button></a>
+                </div>
+            </div>
+
+            <!-- Repeat similar structure for other books -->
+
+            <div class="bookitem">
+                <img src="./Image/Screenshot_2024-06-06_030320-removebg-preview.png" alt="" class="bookimage">
+                <div class="book-details">
+                    <div class="give">
+                        
+                    <h1 class="bookname" id = "h-book">Horror-Book</h1>
+                    <p class="book-description">This is a story book description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                    <a href="#contain2-section"><button class="buy-book"> Buy-BOOK</button></a>
+                </div>
+            </div>
+
+            <div class="bookitem">
+                <img src="./Image/Screenshot-removebg-preview.png" alt="" class="bookimage" >
+                
+                <div class="book-details">
+                    <div class="give"> 
+                  <h1 class="bookname" id = "p-book">Poetry-Book</h1>
+                    <p class="book-description">This is a story book description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                    <a href="#contain3-section"><button class="buy-book"> Buy-BOOK</button></a>
+                </div>
+            </div>
+
+
+            <div class="bookitem">
+                <img src="./Image/story-book-removebg-preview.png" alt="" class="bookimage">
+                <div class="book-details">
+                    <div class="give">
+                    <h1 class="bookname" id = "hi-book">Historical-Book</h1>
+                    <p class="book-description">This is a story book description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                    <a href="#contain4-section"></a><button class="buy-book"> Buy-BOOK</button></a>
+                </div>
+            </div>
+
+
+            <div class="bookitem">
+                <img src="./Image/pixlr-image-generator-a76accb3-c3d4-4eb6-b621-6b3f019caa59-removebg-preview.png" alt="" class="bookimage">
+                <div class="book-details">
+                    <div class="give">
+                    <h1 class="bookname" id = "a-book">Adventure-Book</h1>
+                    <p class="book-description">This is a story book description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                    <a href="#contain5-section"></a><button class="buy-book"> Buy-BOOK</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <img src="./Image/delivery.png" alt="" class = "featureimg">
+            <span class="featuretittle">Free shipping</span>
+            <span class="featuredes">Free worlds wide shippinh on all orders.</span>
+        </div>
+
+
+        <div class="feature">
+            <img src="./Image/return.png" alt="" class = "featureimg">
+            <span class="featuretittle">30 Days Return</span>
+            <span class="featuredes">No question return and easy refund in 14 days.</span>
+        </div>
+
+
+        <div class="feature">
+            <img src="./Image/gift-card.png" alt="" class = "featureimg">
+            <span class="featuretittle">Gift Cards</span>
+            <span class="featuredes">buy gift card and earn coupen code.</span>
+        </div>
+
+
+        <div class="feature">
+            <img src="./Image/email.png" alt="" class = "featureimg">
+            <span class="featuretittle">Contact us!!</span>
+            <span class="featuredes"> keep in touch vie email and support system.</span>
+        </div>
+    </div>
+
+
+    
+   
+      <!-- Story Books Buy Section -->
+      <section class="contain-a" id="contain1-section">
+        <div class="contain1">
+           
+            <!-- Repeat similar structure for other Story books -->
+       
+    
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+        <div class="bookbuy">
+
+            <img src="./Image/s1.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+        <div class="bookbuy">
+
+            <img src="./Image/s2.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/s3.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/s4.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/s5.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/s6.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: Mrutunjay</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+    </div>
+
+</section>
+
+
+    <!-- Horror Books Buy Section -->
+    <section class="contain-b" id="contain2-section">
+        <div class="contain2">
+            <div class="bookbuy">
+                <img src="./Image/images (2).jpg" alt="" class="smallbook">
+                <div class="price">Price: 120 Rs</div>
+                <div class="smallname">Name: Horror</div>
+                <div class="smallbuy"><button>Add</button></div>
+            </div>
+            <!-- Repeat similar structure for other Horror books -->
+     
+
+        <div class="bookbuy">
+
+            <img src="./Image/h1.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h2.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h3.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h4.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h5.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h6.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h7.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h8.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h9.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h10.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+        <div class="bookbuy">
+
+            <img src="./Image/h11.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h12.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h13.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h14.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h15.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h16.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+
+        <div class="bookbuy">
+
+            <img src="./Image/h17.jpg" alt="" class = "smallbook">
+            <div class="price">Price: 120 Rs</div>
+            <div class="smallname">Nmae: horror</div>
+            <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+            
+        </div>
+
+
+
+    </div>
+
+
+
+
+</div>
+
+    </div>
+</section>
+
+
+
+  <!-- poetry book Buy Section -->
+  <section class="contain-c" id="contain3-section">
+    <div class="contain2">
+       
+        <!-- Repeat similar structure for other Story books -->
+   
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+    <div class="bookbuy">
+
+        <img src="./Image/s1.jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+    <div class="bookbuy">
+
+        <img src="./Image/s2.jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/s3.jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/s4.jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/s5.jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/s6.jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+</div>
+
+</section>
+
+
+
+ <!-- Story Books Buy Section -->
+ <section class="contain-d" id="contain4-section">
+    <div class="contain4">
+       
+        <!-- Repeat similar structure for other Story books -->
+   
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+    <div class="bookbuy">
+
+        <img src="./Image/s1.jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+    <div class="bookbuy">
+
+        <img src="./Image/s2.jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/s3.jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/s4.jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/s5.jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/s6.jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+
+
+
+    <div class="bookbuy">
+
+        <img src="./Image/images (1).jpg" alt="" class = "smallbook">
+        <div class="price">Price: 120 Rs</div>
+        <div class="smallname">Nmae: Mrutunjay</div>
+        <div class="smallbuy"><Button style="background-color: black; color: white;" >Add</Button></div>
+        
+    </div>
+</div>
+
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
